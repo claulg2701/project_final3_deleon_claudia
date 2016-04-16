@@ -107,7 +107,7 @@ body {
 
 main,
 .sidebar,
-section {
+article {
     background-color: #ffffff;
     margin: 0.7em;
     padding: 1em 1.2em;
@@ -252,6 +252,20 @@ footer ul a.hv-ig {
 }
 
 @media all and (min-width: 650px) {
+    .home.today,
+    .home.promo {
+        width: calc(100% / 2 - 5em);
+        position: relative;
+        float: left;
+        margin-left: 1.2em;
+    }
+
+    .page::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
     .sidebar article {
         float: left;
         width: 45%;
@@ -259,27 +273,7 @@ footer ul a.hv-ig {
     .sidebar article::after {
         clear: none;
     }
-    #cook-vector {
-        float: none;
-        width: 50%;
-        margin: 0 auto;
-    }
-    #buttons {
-        display: block;
-        content: "";
-        clear: both;
-        width: 100%;
-    }
-    .button:first-child {
-        margin-top: 0;
-    }
-    .button {
-        display: inline;
-    }
-    #feature-dish {
-        width: 55%;
-        float: right;
-    }
+
     .sidebar::after {
         display: block;
         content: "";
@@ -296,11 +290,7 @@ footer ul a.hv-ig {
         width: calc(100% - 100% / 3 * 2 - 4em);
         float: right;
     }
-    .page::after {
-        display: block;
-        content: "";
-        clear: both;
-    }
+    
     .sidebar article {
         float: none;
         width: 100%;
@@ -364,11 +354,5 @@ footer ul a.hv-ig {
         position: relative;
         float: left;
         width: 50%;
-    }
-}
-
-@media all and (min-height: 800px) and (min-width: 1024px) {
-    footer {
-        margin-top: calc(100vh - 800px);
     }
 }
