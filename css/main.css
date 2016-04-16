@@ -140,13 +140,15 @@ h2 {
 
 .decorative-text {
     font-family: 'Rouge Script', cursive;
-    font-size: 2.2em;
+    font-size: 2.1em;
     color: #b03635;
     margin: 0 2em;
 }
 
 #divider {
     margin: 1em auto;
+    width: 100%;
+    max-width: 260px;
 }
 
 .reservation {
@@ -281,34 +283,33 @@ footer ul a.hv-ig {
     }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 960px) {
     main {
         width: calc(100% - 100% / 3 - 4.5em);
         float: left;
     }
+
+    .home,
+    .home.today,
+    .home.promo {
+        width: calc(100% / 3 - 5em);
+        position: relative;
+        float: left;
+        display: inline-block;
+    }
+}
+
+@media all and (min-width: 1024px) {
     .sidebar {
         width: calc(100% - 100% / 3 * 2 - 4em);
         float: right;
     }
-    
-    .sidebar article {
-        float: none;
-        width: 100%;
-    }
-    #cook-vector {
-        width: 50%;
-    }
-    #buttons {
-        width: 100%;
-    }
-    #feature-dish {
-        width: 100%;
-        float: none;
-    }
+
     .sidebar::after {
         display: block;
         clear: none;
     }
+
     .fa-bars,
     .fa-times {
         display: none;
@@ -354,5 +355,11 @@ footer ul a.hv-ig {
         position: relative;
         float: left;
         width: 50%;
+    }
+}
+
+@media all and (min-height: 800px) and (min-width: 1024px) {
+    footer {
+        margin-top: calc(100vh - 800px);
     }
 }
