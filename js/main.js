@@ -44,3 +44,17 @@ window.onresize = function() {
         myMenu.style.transition = 'none';
     }
 };
+
+jQuery( document ).ready( function() {
+
+    /* Init Unslider plugin */
+	$( '.my-slider' ).unslider(
+        {
+            arrows: false,
+            keys: false,
+            nav: false,
+            autoplay: true
+        }
+    );
+
+} );
