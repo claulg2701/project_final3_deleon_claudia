@@ -9,7 +9,8 @@ This project is a mobile first website for a restaurant
 [Project on Host](http://www.claudia-deleon.com/gusteaus-restaurant/)
 
 ## Resources
-
+* Vectors - [freepeek](http://www.freepik.com/)
+* Unslider JQuery plugin - [documentation](http://unslider.com/)
 
 ## Comments
 
@@ -23,7 +24,8 @@ $ npm install -g bower
 
 	* [jquery] (https://github.com/jquery/jquery-dist)
 	* [font awesome] (https://github.com/FortAwesome/Font-Awesome)
+	* [unslider](https://github.com/idiot/unslider)
 
 ```sh
-$ bower install <package>
+$ bower install <package name>
 ```
