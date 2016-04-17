@@ -33,42 +33,8 @@
         <main>
             <h1 class="visuallyhidden">Main Content</h1>
             <section>
-                <h1>Reservation</h1>
-                <form class="mk-reservation" action="" method="post">
-                    <div class="block">
-                        <label for="name">Name</label>
-                        <input id="name" type="text" name="name" placeholder="full name" required minlength="3"/>
-                        <label for="phone">Phone</label>
-                        <input id="phone" type="text" name="phone" placeholder="enter your phone" required/>
-                        <label for="guest">Party of</label>
-                        <input id="guest" type="text" name="guest" placeholder="number of guests" required/>
-                        <div class="clear">
-                            <div class="schedule date">
-                                <label for="date">Date</label>
-                                <input id="date" type="date" name="date" value="" required>
-                            </div>
-                            <div class="schedule time">
-                                <label for="time">Time (between 6-11pm)</label>
-                                <input id="time" type="time" name="time" value="" required>
-                            </div>
-                        </div>
-                        <label for="event">Event Type</label>
-                        <select name="event">
-                            <option disabled selected value> -- select an option -- </option>
-                            <option value="">Gustaus's 50 Aniversary</option>
-                            <option value="dinning">Dinner</option>
-                        </select>
-                        <label for="">Special Request</label>
-                        <textarea name="message" rows="5" cols="50" placeholder="message"></textarea>
+                <h1>Menu</h1>
 
-                        <div class="promo">
-                            <label for="promo">I have a promo code</label>
-                            <input id="promo" type="text" name="promo" value="">
-                        </div>
-                        <button class="button" type="submit" name="button">Submit</button>
-                    </div>
-
-                </form>
             </section>
         </main>
 
@@ -92,7 +58,7 @@
             </section>
             <section id="view-menu">
                 <img src="img/cook_vector.svg" alt="" />
-                <button id="menuBtn" class="button" type="submit" name="button">Menu</button>
+                <button id="reserveBtn" class="button" type="submit" name="button">Reserve</button>
             </section>
 
         </aside>

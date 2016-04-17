@@ -48,6 +48,15 @@ window.onresize = function() {
 
 jQuery( document ).ready( function() {
 
+    /* Add functionality to buttons */
+    $( '#menuBtn' ).click( function() {
+        window.location.href = 'menu.html';
+    } );
+
+    $( '#reserveBtn' ).click( function() {
+        window.location.href = 'contact.html';
+    } );
+
     /* Init Unslider plugin */
 	$slider = $( '.my-slider' ).unslider(
         {

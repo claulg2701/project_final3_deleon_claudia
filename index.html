@@ -20,11 +20,11 @@
             <h2 class="visuallyhidden">Navigation</h2>
             <button id="hamburger-menu" onclick="loadMenu()"><i id="menu-icon" class="fa fa-bars"></i></button>
             <div id="nav-desktop">
-              <a href="#0"><img id="logo" src="img/logo.png" alt="Gusteau's" /></a>
+              <a href="index.html"><img id="logo" src="img/logo.png" alt="Gusteau's" /></a>
               <ul id="nav-links" class="close">
                   <li><a href="index.html">Home</a></li><li>
                       <a href="menu.html">Menu</a></li><li>
-                      <a href="contact.html">Contact</a></li>
+                      <a href="contact.html">Reservations</a></li>
               </ul>
             </div>
         </nav>
@@ -43,8 +43,8 @@
                     <p class="decorative-text">Come join us</p>
                     <p class="description">Reserve a table.
                         Enjoy our selective menu crafted with authenticity</p>
-                    <button class="button" type="button" name="button-one">Reserve</button>
-                    <button class="button" type="button" name="button-one">Menu</button>
+                    <button id="reserveBtn" class="button" type="button" name="reserve">Reserve</button>
+                    <button id="menuBtn" class="button" type="button" name="menu">Menu</button>
                 </div>
             </article>
 
@@ -89,6 +89,8 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/unslider/dist/js/unslider-min.js"></script>
+    <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="bower_components/jquery-validation/dist/additional-methods.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
