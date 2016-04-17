@@ -54,7 +54,7 @@ jQuery( document ).ready( function() {
     } );
 
     $( '#reserveBtn' ).click( function() {
-        window.location.href = 'contact.html';
+        window.location.href = 'reservations.html';
     } );
 
     /* Init Unslider plugin */
