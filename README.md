@@ -13,6 +13,7 @@ This project is a mobile first website for a restaurant
 * Unslider JQuery plugin - [documentation](http://unslider.com/)
 * HTML5 forms - [W3Schools](http://www.w3schools.com/html/html_form_elements.asp)
 * Style placeholder text - [CSS Tricks](https://css-tricks.com/snippets/css/style-placeholder-text/)
+* Form Validator plugin - [jQuery Validation](https://jqueryvalidation.org/)
 
 ## Comments
 
@@ -27,6 +28,7 @@ $ npm install -g bower
 	* [jquery] (https://github.com/jquery/jquery-dist)
 	* [font awesome] (https://github.com/FortAwesome/Font-Awesome)
 	* [unslider](https://github.com/idiot/unslider)
+	* [jquery validator](https://github.com/jzaefferer/jquery-validation)
 
 ```sh
 $ bower install <package name>
