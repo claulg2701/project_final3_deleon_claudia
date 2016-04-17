@@ -337,7 +337,7 @@ footer ul a.hv-ig {
         height: 525px;
     }
 
-    #inner {
+    main {
         width: calc(100% / 3 * 2 - 4.5em);
         float: left;
     }
