@@ -101,4 +101,9 @@ jQuery( document ).ready( function() {
 
         } );
 
+        /* Initiate tabulous plugin on Menu page*/
+        $( '#tabs' ).tabulous( {
+          effect: 'scale'
+        } );
+
 } ); /* end of ready funtcion */
