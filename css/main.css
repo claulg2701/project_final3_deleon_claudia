@@ -159,6 +159,35 @@ h2 {
     width: 100%;
 }
 
+.overlay {
+    position: absolute;
+    display: inline;
+    width: 45%;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 2em;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-family: 'CaviarDreams';
+}
+
+#promo-pos {
+    margin-top: 38%;
+    text-align: right;
+    background-color: rgba(131, 138, 58, 0.67);
+}
+
+#promo-pos .promo-code {
+    font-family: 'CaviarDreamsBold';
+    font-size: 0.7em;
+}
+
+#event-pos {
+    margin-top: 10%;
+    text-align: right;
+    background-color: rgba(176, 54, 53, 0.59);
+}
+
 .reservation {
     text-align: center;
 }
