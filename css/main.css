@@ -333,6 +333,7 @@ form .block {
 form label {
     font-family: 'CaviarDreams';
     color: #e2a252;
+    display: block;
 }
 
 form input,
@@ -379,10 +380,16 @@ form .block button {
     margin-right: 0;
 }
 
+.error {
+    color: #b03635;
+    font-family: 'Lato', sans-serif;
+}
+
 /* Media Queries */
 
 @media all and (min-width: 320px) {
 
+    .clear::after,
     .sidebar article::after {
         display: block;
         content: "";
@@ -433,7 +440,7 @@ form .block button {
     form .schedule.time {
         position: relative;
         float: left;
-        width: 45%
+        width: 45%;
     }
 
     form .schedule.date {

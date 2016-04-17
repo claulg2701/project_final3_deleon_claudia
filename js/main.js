@@ -65,4 +65,29 @@ jQuery( document ).ready( function() {
             $slider.unslider( 'start' );
     } );
 
-} );
+    /* Call Validation form for Reservation*/
+    $validator = $( 'form.mk-reservation' ).validate(
+        {
+            rules: {
+                phone: {
+                    number: true
+                },
+                guest: {
+                    number: true
+                },
+                date: {
+                    date: true
+                },
+                time: {
+                    time: true
+                }
+            },
+            messages: {
+                name: 'Name is required',
+                phone: 'Phone number required',
+                guest: 'Enter total guests'
+            }
+
+        } );
+
+} ); /* end of ready funtcion */
