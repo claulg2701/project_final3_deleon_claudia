@@ -1,3 +1,4 @@
+/* Load and resize menu */
 function loadMenu() {
     var myMenu = document.getElementById( 'nav-links' );
     var openCloseMenu = document.getElementById( 'menu-icon' );
@@ -82,6 +83,7 @@ jQuery( document ).ready( function() {
                     time: true
                 }
             },
+            /* override default messages */
             messages: {
                 name: 'Name is required',
                 phone: 'Phone number required',
