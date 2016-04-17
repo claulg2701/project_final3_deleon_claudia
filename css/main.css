@@ -38,6 +38,8 @@ img {
     width: 100%;
 }
 
+/* Navigation */
+
 #navigation {
     width: 100%;
     margin: 0 auto;
@@ -107,7 +109,7 @@ img {
     font-size: 1em;
 }
 
-/*  Main */
+/* Common page elements */
 
 main,
 .sidebar,
@@ -153,51 +155,6 @@ h2 {
     margin: 1em auto;
     width: 100%;
     max-width: 260px;
-}
-
-#promo-banner {
-    width: 100%;
-}
-
-.overlay {
-    position: absolute;
-    display: inline;
-    width: 45%;
-    padding: 1em 1em 0.5em;
-    box-sizing: border-box;
-    font-size: 2em;
-    line-height: 1.2em;
-    color: #ffffff;
-    font-family: 'CaviarDreams';
-}
-
-#promo-pos {
-    margin-top: 38%;
-    text-align: right;
-    background-color: rgba(131, 138, 58, 0.67);
-}
-
-.promo-code {
-    font-family: 'CaviarDreamsBold';
-    font-size: 0.7em;
-}
-
-#event-pos {
-    margin-top: 10%;
-    text-align: right;
-    background-color: rgba(176, 54, 53, 0.59);
-}
-
-.reservation {
-    text-align: center;
-}
-
-.description a {
-    color: #e2a525;
-}
-
-.description a:hover {
-    color: #b03635;
 }
 
 .button {
@@ -268,6 +225,55 @@ footer ul a.hv-ig {
     padding: 0.5em 0.7em;
 }
 
+/*  Home */
+
+#promo-banner {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    display: inline;
+    width: 45%;
+    padding: 1em 1em 0.5em;
+    box-sizing: border-box;
+    font-size: 2em;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-family: 'CaviarDreams';
+}
+
+#promo-pos {
+    margin-top: 38%;
+    text-align: right;
+    background-color: rgba(131, 138, 58, 0.67);
+}
+
+.promo-code {
+    font-family: 'CaviarDreamsBold';
+    font-size: 0.7em;
+}
+
+#event-pos {
+    margin-top: 10%;
+    text-align: right;
+    background-color: rgba(176, 54, 53, 0.59);
+}
+
+.reservation {
+    text-align: center;
+}
+
+.description a {
+    color: #e2a525;
+}
+
+.description a:hover {
+    color: #b03635;
+}
+
+/* Contact */
+
 /* Media Queries */
 
 @media all and (min-width: 320px) {
@@ -330,11 +336,14 @@ footer ul a.hv-ig {
         display: inline-block;
         height: 525px;
     }
-}
 
-@media all and (min-width: 1024px) {
+    #inner {
+        width: calc(100% / 3 * 2 - 4.5em);
+        float: left;
+    }
+
     .sidebar {
-        width: calc(100% - 100% / 3 * 2 - 4em);
+        width: calc(100% / 3 - 4em);
         float: right;
     }
 
@@ -343,6 +352,9 @@ footer ul a.hv-ig {
         clear: none;
     }
 
+}
+
+@media all and (min-width: 1024px) {
     .fa-bars,
     .fa-times {
         display: none;
