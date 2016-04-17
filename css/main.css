@@ -311,7 +311,7 @@ address {
 }
 
 #view-menu img {
-    width: 37%;
+    width: 33.5%;
     max-width: 200px;
 }
 
@@ -370,7 +370,7 @@ form textarea {
     font-size: 0.9em;
 }
 
-form .block.promo input {
+form .promo input {
     max-width: 200px;
     margin-left: 0;
 }
@@ -430,6 +430,17 @@ form .block button {
         clear: both;
     }
 
+    form .schedule.time {
+        position: relative;
+        float: left;
+        width: 45%
+    }
+
+    form .schedule.date {
+        position: relative;
+        float: right;
+        width: 50%;
+    }
 }
 
 @media all and (min-width: 960px) {
