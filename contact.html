@@ -34,18 +34,37 @@
             <h1 class="visuallyhidden">Main Content</h1>
             <section>
                 <h1>Reservation</h1>
-                <p class="description"><span class="strong">This is a paragraph.
-                </span> <span class="italic">Turnip</span> <a href="#0">greens</a>
-                 yarrow ricebean rutabaga endive cauliflower sea lettuce
-                kohlrabi amaranth water spinach avocado daikon napa cabbage
-                asparagus winter purslane kale.
-                Celery potato scallion desert raisin horseradish spinach carrot
-                soko. Lotus root water spinach fennel kombu maize bamboo shoot
-                green bean swiss chard seakale pumpkin onion chickpea gram corn
-                pea. Brussels sprout coriander water chestnut gourd swiss chard
-                wakame kohlrabi beetroot carrot watercress. Corn amaranth
-                salsify bunya nuts nori azuki bean chickweed potato bell pepper
-                artichoke.</p>
+                <form class="mk-reservation" action="" method="post">
+                    <div class="block">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="full name"/>
+                    </div>
+                    <div class="block">
+                        <label for="guests">Party of</label>
+                        <input type="text" name="guests" placeholder="number of guests"/>
+                    </div>
+                    <div class="block">
+                        <label for="date">Date</label>
+                        <input type="date" name="name" value="">
+                    </div>
+                    <div class="block">
+                        <label for="time">Time</label>
+                        <input type="time" name="name" value="">
+                    </div>
+                    <div class="block">
+                        <label for="event">Event Type</label>
+                        <select name="event">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="">Gustaus's 50 Aniversary</option>
+                            <option value="dinning">Dinning</option>
+                        </select>
+                    </div>
+                    <div class="block">
+                        <label for="">Special Request</label>
+                        <textarea name="message" rows="5" cols="50" placeholder="message"></textarea>
+                    </div>
+                    <button class="button" type="submit" name="button">Submit</button>
+                </form>
             </section>
         </main>
 

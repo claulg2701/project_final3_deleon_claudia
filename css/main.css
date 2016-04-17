@@ -306,6 +306,65 @@ address {
     color: #103853;
 }
 
+/* form */
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+form .block {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    font-family: 'CaviarDreams';
+    color: #e2a252;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+    border: 2px solid #e2a252;
+    box-sizing: border-box;
+    margin: 0 auto 1em;
+    line-height: 1.5em;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    font-size: 0.9em;
+    font-family: 'Rouge Script', cursive;
+    font-size: 1.4em;
+    line-height: 1em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+:-ms-input-placeholder {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+form .button {
+    margin-top: 1em;
+}
+
 /* Media Queries */
 
 @media all and (min-width: 320px) {
@@ -356,6 +415,18 @@ address {
         content: "";
         clear: both;
     }
+
+    form .button {
+        float: right;
+        margin-right: calc(35% - 100px);
+    }
+
+    form::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
 }
 
 @media all and (min-width: 960px) {

@@ -11,6 +11,8 @@ This project is a mobile first website for a restaurant
 ## Resources
 * Vectors - [freepeek](http://www.freepik.com/)
 * Unslider JQuery plugin - [documentation](http://unslider.com/)
+* HTML5 forms - [W3Schools](http://www.w3schools.com/html/html_form_elements.asp)
+* Style placeholder text - [CSS Tricks](https://css-tricks.com/snippets/css/style-placeholder-text/)
 
 ## Comments
 
