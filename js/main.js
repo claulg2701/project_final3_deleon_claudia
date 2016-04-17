@@ -48,7 +48,7 @@ window.onresize = function() {
 jQuery( document ).ready( function() {
 
     /* Init Unslider plugin */
-	$( '.my-slider' ).unslider(
+	$slider = $( '.my-slider' ).unslider(
         {
             arrows: false,
             keys: false,
@@ -56,5 +56,13 @@ jQuery( document ).ready( function() {
             autoplay: true
         }
     );
+    /* pause slider on mouse hover */
+    $slider.on( 'mouseover',
+        function() {
+            $slider.unslider( 'stop' );
+        } ).on( 'mouseout',
+        function() {
+            $slider.unslider( 'start' );
+    } );
 
 } );
