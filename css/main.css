@@ -361,8 +361,13 @@ form textarea {
     font-size: 0.9em;
 }
 
-form .button {
-    margin-top: 1em;
+form .block.promo input {
+    max-width: 200px;
+    margin-left: 0;
+}
+
+form .block button {
+    margin-right: 0;
 }
 
 /* Media Queries */
@@ -411,17 +416,6 @@ form .button {
     }
 
     .sidebar::after {
-        display: block;
-        content: "";
-        clear: both;
-    }
-
-    form .button {
-        float: right;
-        margin-right: calc(35% - 100px);
-    }
-
-    form::after {
         display: block;
         content: "";
         clear: both;
