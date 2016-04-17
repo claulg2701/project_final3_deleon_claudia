@@ -278,7 +278,7 @@ footer ul a.hv-ig {
     margin: 0 0.2em 0.2em;
 }
 
-/* Contact */
+/* Side Bar */
 
 #address .decorative-text {
     line-height: 1.5em;
@@ -294,7 +294,7 @@ address {
 
 #address .fa {
     font-size: 1.7em;
-    color: #b03635;
+    color: #103851;
     display: block;
     text-align: center;
 }
@@ -303,10 +303,19 @@ address {
     font-family: "CaviarDreamsBold";
     font-size: 1.1em;
     text-align: center;
-    color: #103853;
+    color: #b03635;
 }
 
-/* form */
+#view-menu {
+    text-align: center;
+}
+
+#view-menu img {
+    width: 37%;
+    max-width: 200px;
+}
+
+/* Contact - Reservation form */
 
 form {
     width: 100%;
