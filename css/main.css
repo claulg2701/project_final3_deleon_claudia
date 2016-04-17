@@ -148,7 +148,8 @@ h2 {
     font-family: 'Rouge Script', cursive;
     font-size: 2.1em;
     color: #b03635;
-    margin: 0 2em;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #divider {
@@ -272,7 +273,38 @@ footer ul a.hv-ig {
     color: #b03635;
 }
 
+.home .button {
+    display: inline;
+    margin: 0 0.2em 0.2em;
+}
+
 /* Contact */
+
+#address .decorative-text {
+    line-height: 1.5em;
+}
+
+#address .description,
+#address .description .fa,
+address {
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 1em;
+}
+
+#address .fa {
+    font-size: 1.7em;
+    color: #b03635;
+    display: block;
+    text-align: center;
+}
+
+#address .phone {
+    font-family: "CaviarDreamsBold";
+    font-size: 1.1em;
+    text-align: center;
+    color: #103853;
+}
 
 /* Media Queries */
 
