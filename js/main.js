@@ -106,4 +106,8 @@ jQuery( document ).ready( function() {
           effect: 'scale'
         } );
 
+        $( window ).resize( function() {
+          $( '#tabs' ).tabulous();
+        } );
+
 } ); /* end of ready funtcion */

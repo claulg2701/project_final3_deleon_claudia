@@ -42,14 +42,14 @@ p {
 	display: block;
     width: 100%;
     padding: 0.5em 1em;
-    background: #103853;
+    background: #e2a252;
     text-decoration: none;
     color: #ffffff;
     font-family: "CaviarDreamsBold";
     box-sizing: border-box;
 }
 
-@media all and (min-width: 400px) {
+@media all and (min-width: 470px) {
 	#tabs li,#tabs2 li,#tabs3 li,#tabs4 li,#tabs5 li {
 		position: relative;
 		margin-right: 2px;
