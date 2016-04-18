@@ -101,13 +101,4 @@ jQuery( document ).ready( function() {
 
         } );
 
-        /* Initiate tabulous plugin on Menu page*/
-        $( '#tabs' ).tabulous( {
-          effect: 'scale'
-        } );
-
-        $( window ).resize( function() {
-          $( '#tabs' ).tabulous();
-        } );
-
 } ); /* end of ready funtcion */
