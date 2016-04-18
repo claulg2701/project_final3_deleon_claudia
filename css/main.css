@@ -387,6 +387,49 @@ form .block button {
 
 /* Menu */
 
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e2e2e2;
+}
+
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.tabs li {
+    background-color: #e2a252;
+    color: white;
+    display: block;
+    margin-bottom: 1px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+ul.tabs li.current {
+    background: white;
+    color: #2e2e2e;
+}
+
+.tab-content {
+    display: none;
+    background: white;
+    padding: 2em 1em;
+}
+
+.tab-content.current {
+    display: inherit;
+}
+
 /* Media Queries */
 
 @media all and (min-width: 320px) {
@@ -411,6 +454,12 @@ form .block button {
 }
 
 @media all and (min-width: 650px) {
+
+    ul.tabs li {
+        float: left;
+        margin-left: 1px;
+        margin-bottom: 0;
+    }
     .home.today,
     .home.promo {
         width: calc(100% / 2 - 4.2em);
