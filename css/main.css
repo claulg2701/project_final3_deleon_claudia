@@ -430,6 +430,28 @@ ul.tabs li.current {
     display: inherit;
 }
 
+.tab-content.current .menu-item {
+    font-family: "CaviarDreamsBold";
+    color: #103851;
+    text-align: center;
+}
+
+.tab-content.current .menu-item .price {
+    padding-left: 1em;
+    font-family: "CaviarDreams";
+}
+
+.tab-content.current .ingredients {
+    text-align: center;
+
+    color: #828282;
+    font-weight: 100;
+}
+
+.spacer {
+    margin: 2em;
+}
+
 .tabs {
     font-family: 'CaviarDreamsBold';
 }
