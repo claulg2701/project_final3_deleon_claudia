@@ -417,7 +417,7 @@ ul.tabs li {
 
 ul.tabs li.current {
     background: white;
-    color: #2e2e2e;
+    color: #b03635;
 }
 
 .tab-content {
@@ -428,6 +428,10 @@ ul.tabs li.current {
 
 .tab-content.current {
     display: inherit;
+}
+
+.tabs {
+    font-family: 'CaviarDreamsBold';
 }
 
 /* Media Queries */
