@@ -152,6 +152,11 @@ h2 {
     text-align: center;
 }
 
+.light-text {
+    color: #e2a252;
+    font-weight: 300;
+}
+
 #divider {
     margin: 1em auto;
     width: 100%;
@@ -235,7 +240,7 @@ footer ul a.hv-ig {
 .overlay {
     position: absolute;
     display: inline;
-    width: 45%;
+    width: 15%;
     padding: 1em 1em 0.5em;
     box-sizing: border-box;
     font-size: 2em;
@@ -244,8 +249,13 @@ footer ul a.hv-ig {
     font-family: 'CaviarDreams';
 }
 
+.overlay a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 #promo-pos {
-    margin-top: 38%;
+    margin-top: 15%;
     text-align: right;
     background-color: rgba(131, 138, 58, 0.67);
 }
@@ -256,7 +266,7 @@ footer ul a.hv-ig {
 }
 
 #event-pos {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: right;
     background-color: rgba(176, 54, 53, 0.59);
 }

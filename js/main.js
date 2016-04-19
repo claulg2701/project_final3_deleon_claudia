@@ -61,9 +61,9 @@ jQuery( document ).ready( function() {
 	$slider = $( '.my-slider' ).unslider(
         {
             arrows: false,
-            keys: false,
-            nav: false,
-            autoplay: true
+            autoplay: true,
+            infinite:true,
+            nav: false
         }
     );
     /* pause slider on mouse hover */
