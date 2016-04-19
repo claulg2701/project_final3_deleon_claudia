@@ -161,6 +161,11 @@ h2 {
     margin: 1em auto;
     width: 100%;
     max-width: 260px;
+    display: block;
+}
+
+.reservation #divider {
+    margin: 2em auto;
 }
 
 .button {
