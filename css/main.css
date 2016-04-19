@@ -26,7 +26,7 @@ ul {
 }
 
 body {
-    background: url("../img/cover.jpg") no-repeat bottom right;
+    background: url("../img/cover.jpg") no-repeat right bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -157,14 +157,14 @@ h2 {
     font-weight: 300;
 }
 
-#divider {
-    margin: 1em auto;
+.divider {
+    margin: 1em auto 2.5em;
     width: 100%;
     max-width: 260px;
     display: block;
 }
 
-.reservation #divider {
+.reservation .divider {
     margin: 2em auto;
 }
 
@@ -438,7 +438,7 @@ ul.tabs li.current {
 .tab-content {
     display: none;
     background: white;
-    padding: 2em 1em;
+    padding: 1.3em 1em;
 }
 
 .tab-content.current {
