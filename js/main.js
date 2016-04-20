@@ -1,23 +1,26 @@
-/* Load and resize menu */
+/*
+* Custom JavaScript Code
+* Load and resize menu depending on viewport size
+*/
 function loadMenu() {
     var myMenu = document.getElementById( 'nav-links' );
     var openCloseMenu = document.getElementById( 'menu-icon' );
     var logo = document.getElementById( 'logo' );
 
     if ( myMenu.className == 'open' ) {
-      myMenu.className = 'close';
-      myMenu.style.transform = 'translateY(-350px)';
-      myMenu.style.transition = 'transform 0.3s ease';
-      openCloseMenu.className = 'fa fa-bars';
-      myMenu.style.zIndex = '0';
-      logo.style.visibility = 'visible';
+        myMenu.className = 'close';
+        myMenu.style.transform = 'translateY(-350px)';
+        myMenu.style.transition = 'transform 0.3s ease';
+        openCloseMenu.className = 'fa fa-bars';
+        myMenu.style.zIndex = '0';
+        logo.style.visibility = 'visible';
     } else {
-      myMenu.className = 'open';
-      openCloseMenu.className = 'fa fa-times';
-      myMenu.style.transform = 'translateY(-100px)';
-      myMenu.style.transition = 'transform 0.3s ease';
-      myMenu.style.zIndex = '1';
-      logo.style.visibility = 'hidden';
+        myMenu.className = 'open';
+        openCloseMenu.className = 'fa fa-times';
+        myMenu.style.transform = 'translateY(-100px)';
+        myMenu.style.transition = 'transform 0.3s ease';
+        myMenu.style.zIndex = '1';
+        logo.style.visibility = 'hidden';
     }
 }
 
@@ -48,7 +51,7 @@ window.onresize = function() {
 
 jQuery( document ).ready( function() {
 
-    /* Add functionality to buttons */
+    /* Add functionality to Menu and Reserve buttons */
     $( '#menuBtn' ).click( function() {
         window.location.href = 'menu.html';
     } );
@@ -57,7 +60,7 @@ jQuery( document ).ready( function() {
         window.location.href = 'reservations.html';
     } );
 
-    /* Init Unslider plugin */
+    /* Init Unslider plugin with some parameters */
 	$slider = $( '.my-slider' ).unslider(
         {
             arrows: false,
@@ -66,7 +69,7 @@ jQuery( document ).ready( function() {
             nav: false
         }
     );
-    /* pause slider on mouse hover */
+    /* pause Unslider on mouse hover */
     $slider.on( 'mouseover',
         function() {
             $slider.unslider( 'stop' );
@@ -75,8 +78,8 @@ jQuery( document ).ready( function() {
             $slider.unslider( 'start' );
     } );
 
-    /* Call Validation form for Reservation*/
-    $validator = $( 'form.mk-reservation' ).validate(
+    /* Call Validation plugin for Reservation form */
+    $( 'form.mk-reservation' ).validate(
         {
             rules: {
                 phone: {
@@ -92,7 +95,7 @@ jQuery( document ).ready( function() {
                     time: true
                 }
             },
-            /* override default messages */
+            /* override default error messages */
             messages: {
                 name: 'Name is required',
                 phone: 'Phone number required',
@@ -101,11 +104,11 @@ jQuery( document ).ready( function() {
 
         } );
 
-        /* enable menu tabs */
+        /* enable menu tabs on click for Menu page */
         $( 'ul.tabs li' ).click( function() {
             var tabId = $( this ).attr( 'data-tab' );
-		    $( 'ul.tabs li' ).removeClass( 'current' );
-		    $( ' .tab-content' ).removeClass( 'current' );
+            $( ' .tab-content' ).removeClass( 'current' );
+            $( 'ul.tabs li' ).removeClass( 'current' );
 		    $( this ).addClass( 'current' );
 		    $( '#' + tabId ).addClass( 'current' );
     } );
