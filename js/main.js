@@ -6,7 +6,7 @@ function loadMenu() {
     var myMenu = document.getElementById( 'nav-links' );
     var openCloseMenu = document.getElementById( 'menu-icon' );
     var logo = document.getElementById( 'logo' );
-
+    /* check the state of the menu, if it's open, close it; otherwise, open it*/
     if ( myMenu.className == 'open' ) {
         myMenu.className = 'close';
         myMenu.style.transform = 'translateY(-350px)';
@@ -24,6 +24,7 @@ function loadMenu() {
     }
 }
 
+/* Reset the menu to its initial state (closed) when resizing the page */
 window.onresize = function() {
     var mq = window.matchMedia( '(min-width: 1024px)' );
     var myMenu = document.getElementById( 'nav-links' );
@@ -51,6 +52,10 @@ window.onresize = function() {
 
 jQuery( document ).ready( function() {
 
+    /* open/close menu items when the hamburger menu icon is clicked */
+    $( '#hamburger-menu' ).click( loadMenu );
+
+    /* Custom JQuery Code */
     /* Add functionality to Menu and Reserve buttons */
     $( '#menuBtn' ).click( function() {
         window.location.href = 'menu.html';
