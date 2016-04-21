@@ -112,11 +112,12 @@ jQuery( document ).ready( function() {
 
         /* enable menu tabs on click for Menu page */
         $( 'ul.tabs li' ).click( function() {
-            var tabId = $( this ).attr( 'data-tab' );
-            $( ' .tab-content' ).removeClass( 'current' );
+            /* remove current class from previously selected items */
+            $( '.tab-content' ).removeClass( 'current' );
             $( 'ul.tabs li' ).removeClass( 'current' );
+            /* add current to this tab and corresponding content */
 		    $( this ).addClass( 'current' );
-		    $( '#' + tabId ).addClass( 'current' );
+            $( '#content-' + $( this ).attr( 'id' ) ).addClass( 'current' );
     } );
 
 } ); /* end of ready funtcion */

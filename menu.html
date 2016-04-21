@@ -35,16 +35,16 @@
             <section>
                 <h1>Menu</h1>
                 <div class="container">
-                	<div class="clear">
+                	<div class="food-menu">
                       <ul class="tabs">
-                          <li class="tab-link current" data-tab="tab-1">Appetizers</li>
-                          <li class="tab-link" data-tab="tab-2">Entrees</li>
-                          <li class="tab-link" data-tab="tab-3">Desserts</li>
-                          <li class="tab-link" data-tab="tab-4">Drinks</li>
+                          <li id="one" class="tab-link current">Appetizers</li>
+                          <li id="two" class="tab-link">Entrees</li>
+                          <li id="three" class="tab-link">Desserts</li>
+                          <li id="four" class="tab-link">Drinks</li>
                        </ul>
                     </div>
 
-                	<div id="tab-1" class="tab-content current">
+                	<div id="content-one" class="tab-content current">
                 		<p class="decorative-text">Appetizers</p>
                         <div class="spacer">
                             <p class="menu-item">Menu Item One<span class="price">9</span></p>
@@ -73,7 +73,7 @@
                         <img class="divider" src="img/divider.png" alt=""/>
                 	</div>
 
-                	<div id="tab-2" class="tab-content">
+                	<div id="content-two" class="tab-content">
                         <p class="decorative-text">Entrees</p>
                         <div class="spacer">
                             <p class="menu-item">Menu Item One<span class="price">9</span></p>
@@ -93,7 +93,7 @@
                         <img src="img/entrees.jpg" alt="" />
                 	</div>
 
-                	<div id="tab-3" class="tab-content">
+                	<div id="content-three" class="tab-content">
                         <p class="decorative-text">Desserts</p>
                         <div class="spacer">
                             <p class="menu-item">Menu Item One<span class="price">9</span></p>
@@ -112,7 +112,7 @@
                         <img src="img/dessert.jpg" alt="" />
                 	</div>
 
-                	<div id="tab-4" class="tab-content">
+                	<div id="content-four" class="tab-content">
                         <p class="decorative-text">Drinks</p>
                         <div class="spacer">
                             <p class="menu-item">Menu Item One<span class="price">9</span></p>
@@ -148,6 +148,7 @@
         <aside class="sidebar">
             <h1 class="visuallyhidden">Sidebar</h1>
             <section id="address">
+                <h2 class="visuallyhidden">Address</h2>
                 <img class="feature-dish" src="img/restaurant-outside.jpg" alt="" />
                 <p class="decorative-text">Visit Us Today</p>
                 <address>500 Main Street Plaza, <br/>Ratatouille 32801</address>
@@ -164,6 +165,7 @@
                 </p>
             </section>
             <section id="view-menu">
+                <h2 class="visuallyhidden">Quick Link</h2>
                 <img src="img/cook_vector.svg" alt="" />
                 <button id="reserveBtn" class="button" type="submit" name="button">Reserve</button>
             </section>

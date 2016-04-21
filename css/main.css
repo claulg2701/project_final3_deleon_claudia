@@ -9,6 +9,8 @@
     src: url("../fonts/Caviar_Dreams_Bold.woff") format("woff");
 }
 
+/* Common elements to all pages */
+
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -36,6 +38,127 @@ body {
 
 img {
     width: 100%;
+}
+
+main,
+.sidebar,
+article {
+    background-color: #ffffff;
+    margin: 0.7em;
+    padding: 1em 1.2em;
+    border: 3px solid #e2a252;
+}
+
+h1,
+h2 {
+    font-family: 'CaviarDreamsBold';
+}
+
+h1 {
+    font-size: 1.7em;
+    color: #b03635;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #103853;
+}
+
+
+.strong {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.decorative-text {
+    font-family: 'Rouge Script', cursive;
+    font-size: 2.1em;
+    color: #b03635;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.light-text {
+    color: #e2a252;
+    font-weight: 300;
+}
+
+.divider {
+    margin: 1em auto 2.5em;
+    width: 100%;
+    max-width: 260px;
+    display: block;
+}
+
+.button {
+    width: 100px;
+    padding: 10px 0;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: #103853;
+    color: #ffffff;
+    font-family: 'CaviarDreams';
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #e2a252;
+    color: #ffffff;
+    box-shadow: 1px 2px 1px #222222;
+}
+
+.feature-dish {
+    max-width: 100%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #e2a252;
+    width: 100%;
+    padding: 2em 0;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0 auto;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #103853;
+    font-size: 1.2em;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul > * + * {
+    margin-left: 1.5em;
+}
+
+footer ul a {
+    padding: 0.5em;
+    border-radius: 60%;
+}
+
+footer ul a:hover {
+    background-color: #ffffff;
+    box-shadow: 1px 2px 1px #222222;
+}
+
+footer ul a.hv-fb {
+    padding: 0.5em 0.8em;
+}
+
+footer ul a.hv-ig {
+    padding: 0.5em 0.7em;
 }
 
 /* Navigation */
@@ -109,133 +232,6 @@ img {
     font-size: 1em;
 }
 
-/* Common page elements */
-
-main,
-.sidebar,
-article {
-    background-color: #ffffff;
-    margin: 0.7em;
-    padding: 1em 1.2em;
-    border: 3px solid #e2a252;
-}
-
-h1,
-h2 {
-    font-family: 'CaviarDreamsBold';
-}
-
-h1 {
-    font-size: 1.7em;
-    color: #b03635;
-}
-
-h2 {
-    font-size: 1.3em;
-    color: #103853;
-}
-
-
-.strong {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.decorative-text {
-    font-family: 'Rouge Script', cursive;
-    font-size: 2.1em;
-    color: #b03635;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.light-text {
-    color: #e2a252;
-    font-weight: 300;
-}
-
-.divider {
-    margin: 1em auto 2.5em;
-    width: 100%;
-    max-width: 260px;
-    display: block;
-}
-
-.reservation .divider {
-    margin: 2em auto;
-}
-
-.button {
-    width: 100px;
-    padding: 10px 0;
-    display: block;
-    margin: 0 auto;
-    border: none;
-    background-color: #103853;
-    color: #ffffff;
-    font-family: 'CaviarDreams';
-    text-transform: uppercase;
-}
-
-.button:hover {
-    background-color: #e2a252;
-    color: #ffffff;
-    box-shadow: 1px 2px 1px #222222;
-}
-
-.feature-dish {
-    max-width: 100%;
-}
-
-/* Footer */
-
-footer {
-    background-color: #e2a252;
-    width: 100%;
-    padding: 2em 0;
-    text-align: center;
-}
-
-footer ul {
-    padding: 0;
-    margin: 0 auto;
-}
-
-footer ul a {
-    text-decoration: none;
-    color: #103853;
-    font-size: 1.2em;
-}
-
-footer ul li {
-    display: inline;
-}
-
-footer ul > * + * {
-    margin-left: 1.5em;
-}
-
-footer ul a {
-    padding: 0.5em;
-    border-radius: 60%;
-}
-
-footer ul a:hover {
-    background-color: #ffffff;
-    box-shadow: 1px 2px 1px #222222;
-}
-
-footer ul a.hv-fb {
-    padding: 0.5em 0.8em;
-}
-
-footer ul a.hv-ig {
-    padding: 0.5em 0.7em;
-}
-
 /*  Home */
 
 #promo-banner {
@@ -293,7 +289,7 @@ footer ul a.hv-ig {
     margin: 0 0.2em 0.2em;
 }
 
-/* Side Bar */
+/* Contact Info sidebar */
 
 #address .decorative-text {
     line-height: 1.5em;
@@ -329,6 +325,8 @@ address {
     width: 33.5%;
     max-width: 200px;
 }
+
+/* end of sidebar */
 
 /* Contact - Reservation form */
 
@@ -400,6 +398,12 @@ form .block button {
     font-family: 'Lato', sans-serif;
 }
 
+.reservation .divider {
+    margin: 2em auto;
+}
+
+/* end of Reservation */
+
 /* Menu */
 
 .container {
@@ -424,7 +428,7 @@ ul.tabs li {
     cursor: pointer;
 }
 
-.clear::after {
+.food-menu::after {
     content: '';
     display: block;
     clear: both;
@@ -471,29 +475,9 @@ ul.tabs li.current {
     font-family: 'CaviarDreamsBold';
 }
 
+/* end of menu */
+
 /* Media Queries */
-
-@media all and (min-width: 320px) {
-
-    .clear::after,
-    .sidebar article::after {
-        display: block;
-        content: "";
-        clear: both;
-    }
-    #cook-vector {
-        width: 50%;
-        float: left;
-    }
-    #buttons {
-        float: right;
-        width: 50%;
-    }
-    .button:first-child {
-        margin-top: 3em;
-    }
-}
-
 @media all and (min-width: 650px) {
 
     ul.tabs li {
@@ -506,10 +490,10 @@ ul.tabs li.current {
         width: calc(100% / 2 - 4.2em);
         position: relative;
         float: left;
-
     }
 
-    .page::after {
+    .page::after,
+    .sidebar::after {
         content: "";
         display: block;
         clear: both;
@@ -521,12 +505,6 @@ ul.tabs li.current {
     }
     .sidebar article::after {
         clear: none;
-    }
-
-    .sidebar::after {
-        display: block;
-        content: "";
-        clear: both;
     }
 
     form .schedule.time {
@@ -543,7 +521,7 @@ ul.tabs li.current {
 }
 
 @media all and (min-width: 960px) {
-    .home,
+    .home, /* Float homepage sections */
     .home.today,
     .home.promo {
         width: calc(100% / 3 - 4.2em);
@@ -558,6 +536,7 @@ ul.tabs li.current {
         float: left;
     }
 
+    /* Contact info for inner pages */
     .sidebar {
         width: calc(100% / 3 - 4em);
         float: right;
@@ -566,11 +545,13 @@ ul.tabs li.current {
     .sidebar::after {
         display: block;
         clear: none;
+        content: "";
     }
 }
 
 @media all and (min-width: 1024px) {
-    .fa-bars,
+
+    .fa-bars, /* all 'fa' class are font awesome icons */
     .fa-times {
         display: none;
     }
