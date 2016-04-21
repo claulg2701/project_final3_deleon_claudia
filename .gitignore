@@ -2,3 +2,4 @@
 *.psd
 *.ai
 bs-config.js
+bower_components

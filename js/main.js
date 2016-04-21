@@ -99,7 +99,8 @@ jQuery( document ).ready( function() {
             messages: {
                 name: 'Name is required',
                 phone: 'Phone number required',
-                guest: 'Enter total guests'
+                guest: 'Enter total guests',
+                date: 'Accepted format 03/12/2016'
             }
 
         } );

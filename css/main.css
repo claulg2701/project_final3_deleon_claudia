@@ -567,7 +567,6 @@ ul.tabs li.current {
         display: block;
         clear: none;
     }
-
 }
 
 @media all and (min-width: 1024px) {
